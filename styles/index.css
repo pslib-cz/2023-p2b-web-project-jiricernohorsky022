@@ -1,3 +1,113 @@
 body{
-    background-color: 191919;
+    background-color: #191919;
+}
+.img_responsive{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.pizza_header{
+
+    width: 30vw;
+    aspect-ratio: 1/2;
+}
+figure{
+    margin: 0;
+}
+header{
+    color: white;
+}
+.grid_box{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+header h1{
+    display: block;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #C3824F;
+    width: fit-content;
+    padding: 0.75em;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
+.restaurant_name{
+    margin-left: 8vw;
+    width: 220px;
+    font-size: 1.25em;
+}
+.bottom_header{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.header_text{
+    font-size: 1.25em;
+}
+.header_text p{
+    margin: 0;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1em;
+    margin: 0.5em;
+}
+.card{
+    background-color: #DCAD75;
+    border-radius: 25px;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 400px;
+    gap: 1em;
+
+}
+.card_text{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.card footer{
+    background-color: #C3824F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+}
+.footer_section{
+    color: white;
+    margin: 1em;
+    border-top: #6E6E6E solid 2px ;
+}
+.radek{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+.radek p{
+    margin: 0;
+    margin-top: 0.3em;
+    
+}
+.kontakty a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 1em;
+}
+.kontakty p{
+    margin: 0;
+    margin-top: 1em;
+}
+.kontakty{
+    font-size: 1.25em;
 }
