@@ -14,18 +14,24 @@ a{
 .more_info{
     margin: 1em;
 }
+header{
+    position: sticky;
+    top: 0;
+}
 .menu{
+    
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
     gap: 1em;
-    margin: 1em;
     padding-bottom: 0.5em;
-    border-bottom: #6E6E6E solid 2px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    border-bottom: #6E6E6E solid 2px; 
+
 }
+
 .kategorie{
     margin: 1em;
     color: white;
