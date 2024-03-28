@@ -1,0 +1,55 @@
+body{
+    background-color: #191919;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img_responsive{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_section{
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-top: #6E6E6E solid 2px ;
+}
+.radek{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+.radek p{
+    margin: 0;
+    margin-top: 0.3em;
+    
+}
+.kontakty a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 0.5em;
+}
+.kontakty p{
+    margin: 0;
+    margin-top: 0.5em;
+}
+.kontakty span{
+    margin-top: 0.5em;
+}
+.kontakty{
+    font-size: 1.4em;
+}
+@media only screen and (min-width: 800px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_section{
+        width: 400px;
+    }
+}

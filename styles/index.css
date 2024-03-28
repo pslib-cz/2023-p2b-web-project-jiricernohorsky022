@@ -1,16 +1,6 @@
-body{
-    background-color: #191919;
-}
-.img_responsive{
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 .pizza_header{
-
-    width: 30vw;
-    aspect-ratio: 1/2;
+    width: 40vw;
+    aspect-ratio: 1/1;
 }
 figure{
     margin: 0;
@@ -23,6 +13,7 @@ header{
     grid-template-columns: min-content 1fr;
     grid-template-rows: auto;
     align-items: center;
+    margin: 0.5em;
 }
 header h1{
     display: block;
@@ -42,19 +33,24 @@ header h1{
     width: 220px;
     font-size: 1.25em;
 }
+.restaurant_name h1{
+    margin: 0;
+}
 .bottom_header{
     margin-left: 5%;
     margin-right: 5%;
 }
 .header_text{
     font-size: 1.25em;
+    grid-column: 2 span ;
 }
 .header_text p{
     margin: 0;
 }
 .button{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    grid-column-start: 2;
 }
 .main{
     display: flex;
@@ -83,31 +79,31 @@ header h1{
     justify-content: center;
     font-size: 1.25em;
 }
-.footer_section{
-    color: white;
-    margin: 1em;
-    border-top: #6E6E6E solid 2px ;
-}
-.radek{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.25em;
-}
-.radek p{
-    margin: 0;
-    margin-top: 0.3em;
-    
-}
-.kontakty a{
-    text-decoration: none;
-    display: block;
-    color: white;
-    margin-top: 1em;
-}
-.kontakty p{
-    margin: 0;
-    margin-top: 1em;
-}
-.kontakty{
-    font-size: 1.25em;
+@media only screen and (min-width: 1000px) {
+    .main{
+        overflow: hidden;
+        justify-content: center;
+    }
+    .grid_box{
+        grid-template-rows: 1fr min-content 1fr;
+    }
+    .restaurant_name{
+        font-size: 1.5em;
+        width: 250px;
+        align-self: flex-end;
+    }
+    .pizza_header{
+        grid-row: 3 span;
+    }
+    .header_text{
+        margin-left: 8vw;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        align-self: flex-start;
+    }
+    .button{
+        margin-top: 2em;
+        margin-left: 8vw;
+        align-self: flex-start;
+    }
 }
