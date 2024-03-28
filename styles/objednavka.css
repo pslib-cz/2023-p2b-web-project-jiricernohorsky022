@@ -23,3 +23,31 @@ a{
     padding-bottom: 0.5em;
     border-bottom: #6E6E6E solid 2px;
 }
+.kategorie{
+    margin: 1em;
+    color: white;
+}
+.hlava_flex{
+    display: flex;
+}
+.podkategorie{
+    color: #C3824F;
+}
+.podkategorie h2{
+    margin: 0;
+    font-size: 1.2em;
+}
+.cara{
+    border: #6E6E6E solid 1px ;
+    height: 0;
+    width: 100%;
+    align-self: center;
+    margin-left: 1em;
+}
+.produkt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.produkt_madpis{
+    
+}
