@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #C3824F;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
+.more_info a{
+    padding: 0.75em;
+}
+.more_info{
+    margin: 1em;
+}
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1em;
+    margin: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: #6E6E6E solid 2px;
+}
