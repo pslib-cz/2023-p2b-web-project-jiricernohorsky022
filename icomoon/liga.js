@@ -25,6 +25,8 @@
     var icons;
     if (!supportsProperty('fontFeatureSettings')) {
         icons = {
+            'box': '&#xe901;',
+            'car': '&#xe900;',
             'phone': '&#xe942;',
             'mail': '&#xe945;',
             'facebook': '&#xea91;',

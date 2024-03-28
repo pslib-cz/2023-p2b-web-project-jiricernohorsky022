@@ -107,3 +107,12 @@ header h1{
         align-self: flex-start;
     }
 }
+@media only screen and (min-width: 800px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_section{
+        width: 400px;
+    }
+}

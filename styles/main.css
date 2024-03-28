@@ -44,12 +44,3 @@ body{
 .kontakty{
     font-size: 1.4em;
 }
-@media only screen and (min-width: 800px) {
-    .footer{
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer_section{
-        width: 400px;
-    }
-}

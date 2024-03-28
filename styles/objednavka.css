@@ -1,6 +1,4 @@
-body{
-    max-width: 800px;
-}
+
 a{
     text-decoration: none;
     color: black;
@@ -75,7 +73,51 @@ header{
     align-items: center;
     justify-self: flex-end;
 }
-
-@media only screen and (min-width: 800px) {
-    
+h4{
+    color: #C3824F;
+    font-size: 1.3em;
+    margin: 0;
+}
+.popis p{
+    margin: 0;
+    padding-left: 1.5em;
+    width: 200px;
+}
+.vydaje p{
+    width: 100px;
+}
+footer{
+   position: fixed;
+}
+@media only screen and (min-width: 900px) {
+    body{
+        display: grid;
+        grid-template-columns: 150px 1fr 350px;
+        max-width: 1300px;
+    }
+    footer{
+        position:sticky;
+        top: 0;
+        margin-top: 2em;
+     }
+    .more_info{
+        opacity: 0;
+        position: fixed;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-end;
+        border: 0;
+        margin: 2em;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #C3824F;
+        display: block;
+        background-color: #191919;
+        width: fit-content;
+        padding: 0;
+        border-radius: 0;
+        font-size: 1.25em;
+    }
 }
