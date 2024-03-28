@@ -22,6 +22,9 @@ a{
     margin: 1em;
     padding-bottom: 0.5em;
     border-bottom: #6E6E6E solid 2px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .kategorie{
     margin: 1em;
@@ -38,7 +41,7 @@ a{
     font-size: 1.2em;
 }
 .cara{
-    border: #6E6E6E solid 1px ;
+    border: #6E6E6E solid 1.5px ;
     height: 0;
     width: 100%;
     align-self: center;
@@ -47,7 +50,23 @@ a{
 .produkt{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2em;
+    padding-bottom: 0.2em;
+    border-bottom: #6E6E6E solid 0.5px ;
 }
-.produkt_madpis{
-    
+.produkt_nadpis, .produkt_popis{
+    grid-column: 2 span;
+}
+.produkt_nadpis h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+.produkt_cena p{
+    margin: 0;
+    font-size: 2em;
+}
+.objednat_button{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
 }
