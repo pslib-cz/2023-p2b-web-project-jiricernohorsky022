@@ -15,11 +15,7 @@ a{
 .more_info{
     margin: 1em;
 }
-header{
-    position: sticky;
-    top: 0;
-    background-color: #191919;
-}
+
 .menu{
     display: flex;
     flex-wrap: nowrap;
@@ -87,21 +83,25 @@ h4{
     width: 100px;
 }
 footer{
-   position: fixed;
+    display: none;
 }
 @media only screen and (min-width: 900px) {
     body{
-        display: grid;
-        grid-template-columns: 150px 1fr 350px;
         max-width: 1300px;
+        position: relative;
     }
     footer{
+        display: block;
         position:sticky;
         top: 0;
         margin-top: 2em;
      }
+    main{
+        display: grid;
+        grid-template-columns: 150px 1fr 350px;
+    }
     .more_info{
-        opacity: 0;
+        display: none;
         position: fixed;
     }
     .menu{
@@ -109,6 +109,7 @@ footer{
         align-items: flex-end;
         border: 0;
         margin: 2em;
+        overflow-x: auto;
     }
     .menu a{
         text-decoration: none;
@@ -119,5 +120,10 @@ footer{
         padding: 0;
         border-radius: 0;
         font-size: 1.25em;
+    }
+    .more {
+        position: sticky;
+        top: 2em;
+        margin-top: 2em;
     }
 }
