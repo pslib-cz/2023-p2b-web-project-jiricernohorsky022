@@ -62,6 +62,11 @@ input[type=submit] {
     .footer{
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        left: 0;
+        bottom: 1em;
+        width: 100%;
+        align-items: flex-end;
     }
     .footer_section{
         width: 400px;
