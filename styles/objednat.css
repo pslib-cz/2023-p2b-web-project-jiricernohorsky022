@@ -1,5 +1,5 @@
 
-a{
+main a{
     text-decoration: none;
     color: black;
     display: block;
@@ -8,12 +8,6 @@ a{
     padding: 0.5em;
     border-radius: 10px;
     font-size: 1.25em;
-}
-.more_info a{
-    padding: 0.75em;
-}
-.more_info{
-    margin: 1em;
 }
 
 .menu{
@@ -82,9 +76,6 @@ h4{
 .vydaje p{
     width: 100px;
 }
-footer{
-    display: none;
-}
 @media only screen and (min-width: 900px) {
     body{
         max-width: 1300px;
@@ -122,7 +113,6 @@ footer{
         font-size: 1.25em;
     }
     .more {
-        position: sticky;
         top: 2em;
         margin-top: 2em;
     }
