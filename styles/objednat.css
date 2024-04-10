@@ -24,7 +24,7 @@ main a{
     margin: 1em;
     color: white;
 }
-.hlava_flex{
+.hlava-flex{
     display: flex;
 }
 .podkategorie{
@@ -49,18 +49,18 @@ main a{
     padding-bottom: 0.2em;
     border-bottom: #6E6E6E solid 0.5px ;
 }
-.produkt_nadpis, .produkt_popis{
+.produkt-nadpis, .produkt-popis{
     grid-column: 2 span;
 }
-.produkt_nadpis h3{
+.produkt-nadpis h3{
     margin: 0;
     font-size: 1.5em;
 }
-.produkt_cena p{
+.produkt-cena p{
     margin: 0;
     font-size: 2em;
 }
-.objednat_button{
+.objednat-button{
     display: flex;
     align-items: center;
     justify-self: flex-end;
@@ -93,7 +93,7 @@ h4{
         display: grid;
         grid-template-columns: 250px 1fr 350px;
     }
-    .more_info{
+    .more-info{
         display: none;
         position: fixed;
     }

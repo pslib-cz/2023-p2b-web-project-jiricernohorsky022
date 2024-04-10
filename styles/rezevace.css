@@ -1,7 +1,7 @@
 main{
     color: white;
 }
-.rezevace_flex{
+.rezevace-flex{
     display: flex;
 }
 .nadpis{
@@ -42,18 +42,18 @@ input[type=submit] {
     color: #C3824F;
     opacity: 1;
   }
-.signin_grid{
+.signin-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     margin-bottom: 2em;
 }
-.signin_grid {
+.signin-grid {
     margin-left: 1em;
     margin-right: 1em;
 }
 @media only screen and (min-width: 800px) {
-    .signin_grid{
+    .signin-grid{
         max-width: 1000px;
         grid-template-columns: 1fr 1fr;
         margin-left: auto;
@@ -68,7 +68,7 @@ input[type=submit] {
         width: 100%;
         align-items: flex-end;
     }
-    .footer_section{
+    .footer-section{
         width: 400px;
     }
 }

@@ -5,14 +5,14 @@ body{
     margin-left: auto;
 }
 
-.img_responsive{
+.img-responsive{
     width: 100%;
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.footer_section{
+.footer-section{
     color: white;
     margin-left: 1em;
     margin-right: 1em;
@@ -60,6 +60,7 @@ body{
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
+    z-index: 2;
 }
 .off-screen-menu.active {
     right: 0;
