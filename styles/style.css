@@ -131,6 +131,7 @@ li {
         align-items: flex-end;
         flex-direction: row;
         text-align:end;
+        z-index: 1000;
     }
     li{
         display: inline;
