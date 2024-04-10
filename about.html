@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./icomoon/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+     rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>o nás</title>
 </head>
 <body>
@@ -28,16 +32,30 @@
         </div>
     </header>
     <main>
-
-
-
-
-
-
-
-
-
-        
+        <div class="about-text">
+            <div class="cara"></div>
+            <p>
+                Vítejte v naší autentické italské pizzerii, kde vaše chuťové pohárky budou rozjasněny lahodnými vůněmi a překvapivými kombinacemi. Naše pizzy jsou připravovány z čerstvých surovin a pečeny v klenotu naší kuchyně - kamenné peci, která zaručuje dokonalou křupavost kůrky a výraznou chuť. Každá naše pizza je ručně tvořená s láskou a péčí, přesně podle vašich představ. Přijďte a ochutnejte kousek Itálie přímo u nás!
+            </p>
+            <p>
+                Jsme pizzerie, která si zakládá na kvalitě a jedinečných kombinacích. Naše nabídka zahrnuje širokou škálu pizz s různými oblohami, od tradičních italských receptů až po moderní, experimentální varianty. Pro ty, kteří preferují něco jiného, máme také na výběr saláty, těstoviny a další lahodné speciality. Navíc nabízíme různé možnosti pro vegetariány, vegany a ty s bezlepkovou dietou, abychom uspokojili potřeby každého zákazníka. S rychlým a přátelským servisem se postaráme o to, abyste si své jídlo u nás užili do posledního sousta.
+            </p>
+            <p>
+                Když vstoupíte do naší pizzerie, okamžitě ucítíte teplo a živelnost italského prostředí. Rustikální interiér, provoněný vůní čerstvého pečiva a bylin, vás přenese přímo do malebných uliček italských měst. Naše příjemné a pohodové prostředí je ideální pro rodinné večeře, večírky s přáteli nebo romantická rande. K tomu všemu doplňuje vaše gastronomické dobrodružství široká nabídka vína, která dokonale doplní chuťové nuance vašeho jídla. Přijďte si k nám užít skvělou atmosféru a pochutnat si na nejlepší pizze v okolí!
+            </p>
+            <div class="cara"></div>
+        </div>
+        <swiper-container class="mySwiper" init="false">
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+            <swiper-slide><img src="./images/tabel.jpg"></swiper-slide>
+          </swiper-container>
     </main>
     <footer class="footer">
         <div class="footer_section kontakty">
@@ -89,6 +107,8 @@
             </div>
         </div>
     </footer>
-    <script src="./burger.js"></script>
+    <script src="./scripts/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
 </body>
 </html>
