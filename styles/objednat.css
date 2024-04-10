@@ -1,5 +1,5 @@
+main a {
 
-main a{
     text-wrap: nowrap;
     text-decoration: none;
     color: black;
@@ -11,100 +11,119 @@ main a{
     font-size: 1.25em;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
     gap: 1em;
     padding-bottom: 0.5em;
-    border-bottom: #6E6E6E solid 2px; 
+    border-bottom: #6E6E6E solid 2px;
 }
 
-.kategorie{
+.kategorie {
     margin: 1em;
     color: white;
 }
-.hlava-flex{
+
+.hlava-flex {
     display: flex;
 }
-.podkategorie{
+
+.podkategorie {
     color: #C3824F;
 }
-.podkategorie h2{
+
+.podkategorie h2 {
     text-wrap: nowrap;
     margin: 0;
     font-size: 1.2em;
 }
-.cara{
-    border: #6E6E6E solid 1.5px ;
+
+.cara {
+    border: #6E6E6E solid 1.5px;
     height: 0;
     width: 100%;
     align-self: center;
     margin-left: 1em;
 }
-.produkt{
+
+.produkt {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 2em;
     padding-bottom: 0.2em;
-    border-bottom: #6E6E6E solid 0.5px ;
+    border-bottom: #6E6E6E solid 0.5px;
 }
-.produkt-nadpis, .produkt-popis{
+
+.produkt-nadpis,
+.produkt-popis {
     grid-column: 2 span;
 }
-.produkt-nadpis h3{
+
+.produkt-nadpis h3 {
     margin: 0;
     font-size: 1.5em;
 }
-.produkt-cena p{
+
+.produkt-cena p {
     margin: 0;
     font-size: 2em;
 }
-.objednat-button{
+
+.objednat-button {
     display: flex;
     align-items: center;
     justify-self: flex-end;
 }
-h4{
+
+h4 {
     color: #C3824F;
     font-size: 1.3em;
     margin: 0;
 }
-.popis p{
+
+.popis p {
     margin: 0;
     padding-left: 1.5em;
     width: 200px;
 }
-.vydaje p{
+
+.vydaje p {
     width: 100px;
 }
+
 @media only screen and (min-width: 1000px) {
-    body{
+    body {
         max-width: 1300px;
         position: relative;
     }
-    footer{
+
+    footer {
         display: block;
-        position:sticky;
+        position: sticky;
         top: 0;
         margin-top: 2em;
-     }
-    main{
+    }
+
+    main {
         display: grid;
         grid-template-columns: 250px 1fr 350px;
     }
-    .more-info{
+
+    .more-info {
         display: none;
         position: fixed;
     }
-    .menu{
+
+    .menu {
         flex-direction: column;
         align-items: flex-end;
         border: 0;
         margin: 2em;
         overflow-x: auto;
     }
-    .menu a{
+
+    .menu a {
         text-decoration: none;
         color: #C3824F;
         display: block;
@@ -114,6 +133,7 @@ h4{
         border-radius: 0;
         font-size: 1.25em;
     }
+
     .more {
         top: 2em;
         margin-top: 2em;
