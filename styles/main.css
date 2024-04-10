@@ -1,0 +1,507 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #191919;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section {
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-top: #6E6E6E solid 2px;
+}
+
+.radek {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+
+.radek p {
+    margin: 0;
+    margin-top: 0.3em;
+
+}
+
+.kontakty a {
+    margin-top: 0.5em;
+}
+
+.kontakty p {
+    margin: 0;
+    margin-top: 0.5em;
+}
+
+.kontakty span {
+    margin-top: 0.5em;
+}
+
+.kontakty {
+    font-size: 1em;
+}
+
+.off-screen-menu {
+    background-color: #C3824F;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 2;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding-top: 1em;
+    padding-right: 1em;
+    display: flex;
+}
+
+.ham-menu {
+    z-index: 3;
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #C3824F;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span {
+    background-color: white;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.grid-box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.pizza-header {
+    width: 40vw;
+    aspect-ratio: 1/1;
+    max-width: 500px;
+}
+
+.footer-card a {
+    color: black;
+}
+
+.button a{
+    color: black;
+    background-color: #C3824F;
+    width: fit-content;
+    text-wrap: nowrap;
+    border-radius: 10px;
+    font-size: 1.25em;
+    padding: 0.75em;
+}
+
+
+.restaurant-name {
+    font-size: 1.25em;
+}
+
+.restaurant-name h1 {
+    margin: 0;
+}
+
+.bottom-header {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header-text {
+    font-size: 1.25em;
+    grid-column: 2 span;
+}
+
+.header-text p {
+    margin: 0;
+}
+
+.button-mainpage{
+    display: flex;
+    justify-content: center;
+    grid-column: 2 span;
+}
+
+.objednat-button {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1em;
+    margin: 0.5em;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr 50px;
+    background-color: #DCAD75;
+    border-radius: 25px;
+    overflow: hidden;
+    min-width: 350px;
+    max-width: 350px;
+    gap: 1em;
+
+}
+
+.card-text {
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
+.card-text p{
+    color: black;
+}
+.footer-card {
+    background-color: #C3824F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: #6E6E6E solid 2px;
+    padding: 1em;
+}
+
+.kategorie {
+    margin: 1em;
+    color: white;
+}
+
+.hlava-flex {
+    display: flex;
+}
+
+.podkategorie {
+    color: #C3824F;
+}
+
+.podkategorie h2 {
+    text-wrap: nowrap;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.cara {
+    border: #6E6E6E solid 1.5px;
+    height: 0;
+    width: 100%;
+    align-self: center;
+    margin-left: 1em;
+}
+
+.produkt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2em;
+    padding-bottom: 0.2em;
+    border-bottom: #6E6E6E solid 0.5px;
+}
+
+.produkt-nadpis,
+.produkt-popis {
+    grid-column: 2 span;
+}
+
+.produkt-nadpis h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.produkt-cena p {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+
+h4 {
+    color: #C3824F;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.popis p {
+    margin: 0;
+    padding-left: 1.5em;
+    width: 200px;
+}
+
+.vydaje p {
+    width: 100px;
+}
+.rezervace-main {
+    color: white;
+}
+
+.rezevace-flex {
+    display: flex;
+}
+
+.nadpis {
+    color: #C3824F;
+}
+
+.nadpis h1 {
+    margin: 0;
+}
+
+.cara {
+    border: #6E6E6E solid 1px;
+    height: 0;
+    width: 100%;
+    align-self: center;
+    margin-left: 1em;
+}
+
+.hlavicka {
+    margin: 1em;
+    border-bottom: #6E6E6E solid 2px;
+}
+
+input[type=text],
+select,
+input[type=date] {
+    padding: 12px;
+    border: 1px solid #C3824F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #C3824F;
+    resize: vertical;
+    background-color: black;
+}
+
+input[type=submit] {
+    background-color: #C3824F;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #C3824F;
+    opacity: 1;
+}
+
+.signin-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.signin-grid {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        max-width: 1300px;
+        position: relative;
+    }
+
+    .main-order {
+        display: grid;
+        grid-template-columns: 250px 1fr 350px;
+    }
+
+    .more-info {
+        display: none;
+        position: fixed;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+        border: 0;
+        margin: 2em;
+        overflow-x: auto;
+    }
+
+    .menu a {
+        color: #C3824F;
+        display: block;
+        background-color: #191919;
+        width: fit-content;
+        padding: 0;
+        border-radius: 0;
+        font-size: 1.25em;
+    }
+
+    .more {
+        top: 2em;
+        margin-top: 2em;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .main {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .signin-grid {
+        max-width: 1000px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-fixed{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-section {
+        width: 400px;
+        align-self: flex-end;
+    }
+    .shrink{
+        max-width: 400px;
+        width: auto;
+    }
+    .grid-box {
+        grid-template-rows: 1fr min-content 1fr;
+    }
+
+    .restaurant-name {
+        font-size: 1.5em;
+        width: 250px;
+        align-self: flex-end;
+    }
+
+    .pizza-header {
+        grid-row: 3 span;
+    }
+
+    .header-text {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        align-self: flex-start;
+    }
+
+    .button-mainpage {
+        margin-top: 2em;
+        align-self: flex-start;
+        grid-column: 1 span;
+
+    }
+    nav {
+        display: none;
+    }
+
+    .off-screen-menu {
+        position: static;
+        background-color: #191919;
+        height: 60px;
+        width: 100%;
+        max-width: none;
+        display: block;
+        font-size: 2em;
+        align-items: flex-end;
+        flex-direction: row;
+        text-align: end;
+        z-index: 1000;
+    }
+
+    li {
+        display: inline;
+        margin-left: 1em;
+    }
+
+    ul {
+        margin: 0;
+        margin-right: 1em;
+        margin-top: 0.5em;
+    }
+
+    a {
+        display: inline;
+    }
+}
