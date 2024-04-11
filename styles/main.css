@@ -258,6 +258,9 @@ nav {
     margin: 0;
     font-size: 1.2em;
 }
+.about-text{
+    margin: 1em;
+}
 
 .about-text h2 {
     color: white;
@@ -326,14 +329,6 @@ h4 {
 
 .nadpis h1 {
     margin: 0;
-}
-
-.cara {
-    border: #6E6E6E solid 1px;
-    height: 0;
-    width: 100%;
-    align-self: center;
-    margin-left: 1em;
 }
 
 .hlavicka {
@@ -439,6 +434,7 @@ input[type=submit] {
         position: fixed;
         width: 100%;
         bottom: 0;
+        left: 0;
     }
 
     .footer {
